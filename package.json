@@ -1,10 +1,10 @@
 {
   "name": "caltrc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CALTRC - Calorie Tracking Application for health-conscious users",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/server.js",
     "test": "jest"
   },
   "keywords": [
@@ -15,6 +15,9 @@
   ],
   "author": "CALTRC Team",
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
   "devDependencies": {
     "jest": "^29.0.0"
   }
