@@ -57,14 +57,34 @@
 
 ---
 
+## M2 Documents
+
+- [Design & Architecture v1](docs/design-architecture.md)
+- [Test Strategy](docs/test-strategy.md)
+
+---
+
 ## Project Structure
 
 ```
-/src        # Application source code
-/tests      # Test files
-README.md   # Project documentation
-TEAM.md     # Team norms and roles
-.gitignore  # Git ignore rules
+/docs               # Design documents and strategy docs
+  design-architecture.md
+  test-strategy.md
+/src                # Application source code
+  index.js          # Entry point
+  dataStore.js      # Data persistence abstraction
+  surveyModule.js   # Health survey logic
+  foodLogger.js     # Food entry & barcode lookup
+  goalEngine.js     # Calorie/macro goal computation
+/tests              # Test files
+  fixtures/         # Test data (JSON fixtures)
+  surveyModule.test.js
+  foodLogger.test.js
+  goalEngine.test.js
+  index.test.js     # Integration tests
+README.md           # Project documentation
+TEAM.md             # Team norms and roles
+.gitignore          # Git ignore rules
 ```
 
 ---
